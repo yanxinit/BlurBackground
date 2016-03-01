@@ -4,4 +4,4 @@
 模糊算法来自：http://stackoverflow.com/questions/2067955/fast-bitmap-blur-for-android-sdk
 
 ##效果图：
- ![](https://github.com/yanxinit/BlurBackground/edit/master/Demo.gif)
+ ![](https://github.com/yanxinit/BlurBackground/blob/master/Demo.gif)
