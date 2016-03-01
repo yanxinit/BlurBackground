@@ -13,8 +13,8 @@ BlurHandler.getInstance().beginBlur(getWindow().getDecorView())
 ```
 在新页面：
 ```java
-@Override
-public void onAttachedToWindow() {
+    @Override
+    public void onAttachedToWindow() {
         super.onAttachedToWindow();
         updateBackground();
         BlurHandler.getInstance().addBlurCompleteListener(this);
