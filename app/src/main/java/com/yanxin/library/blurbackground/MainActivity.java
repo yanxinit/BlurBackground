@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNewPage(View view) {
-        BlurHandler.getInstance().beginBlur(getWindow().getDecorView());
+        BlurHandler.getInstance().beginBlur(this);
         startActivity(new Intent(this, BlurDemoActivity.class));
     }
 

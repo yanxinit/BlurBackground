@@ -7,23 +7,30 @@ import android.graphics.Bitmap;
  */
 public class BlurUtils {
 
+    /**
+     * http://stackoverflow.com/questions/2067955/fast-bitmap-blur-for-android-sdk
+     * http://incubator.quasimondo.com/
+     *
+     * @param sentBitmap
+     * @param scale
+     * @param radius
+     * @return
+     */
     public static Bitmap fastBlur(Bitmap sentBitmap, float scale, int radius) {
-
         int width = Math.round(sentBitmap.getWidth() * scale);
         int height = Math.round(sentBitmap.getHeight() * scale);
         sentBitmap = Bitmap.createScaledBitmap(sentBitmap, width, height, false);
 
-        Bitmap bitmap = sentBitmap.copy(sentBitmap.getConfig(), true);
+        Bitmap img = sentBitmap.copy(sentBitmap.getConfig(), true);
 
         if (radius < 1) {
-            return (null);
+            return null;
         }
-
-        int w = bitmap.getWidth();
-        int h = bitmap.getHeight();
+        int w = img.getWidth();
+        int h = img.getHeight();
 
         int[] pix = new int[w * h];
-        bitmap.getPixels(pix, 0, w, 0, 0, w, h);
+        img.getPixels(pix, 0, w, 0, 0, w, h);
 
         int wm = w - 1;
         int hm = h - 1;
@@ -162,8 +169,7 @@ public class BlurUtils {
             yi = x;
             stackpointer = radius;
             for (y = 0; y < h; y++) {
-                // Preserve alpha channel: ( 0xff000000 & pix[yi] )
-                pix[yi] = (0xff000000 & pix[yi]) | (dv[rsum] << 16) | (dv[gsum] << 8) | dv[bsum];
+                pix[yi] = 0xff000000 | (dv[rsum] << 16) | (dv[gsum] << 8) | dv[bsum];
 
                 rsum -= routsum;
                 gsum -= goutsum;
@@ -208,9 +214,8 @@ public class BlurUtils {
             }
         }
 
-        bitmap.setPixels(pix, 0, w, 0, 0, w, h);
+        img.setPixels(pix, 0, w, 0, 0, w, h);
 
-        return (bitmap);
+        return img;
     }
-
 }
