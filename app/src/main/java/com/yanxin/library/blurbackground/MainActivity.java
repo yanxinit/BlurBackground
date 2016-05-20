@@ -15,7 +15,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void openNewPage(View view) {
+    public void openNewActivity(View view) {
+        BlurHandler.getInstance().beginBlur(this);
+        startActivity(new Intent(this, BlurDemoActivity.class));
+    }
+
+    public void openNewFragment(View view) {
         BlurHandler.getInstance().beginBlur(this);
         startActivity(new Intent(this, BlurDemoActivity.class));
     }
