@@ -1,4 +1,4 @@
-<manifest package="com.yanxin.library.library"
+<manifest package="com.yanxin.blurbackground.library"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application

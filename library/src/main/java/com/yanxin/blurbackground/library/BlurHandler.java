@@ -1,4 +1,4 @@
-package com.yanxin.library.library;
+package com.yanxin.blurbackground.library;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

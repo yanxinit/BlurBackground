@@ -1,11 +1,11 @@
-package com.yanxin.library.blurbackground;
+package com.yanxin.blurbackground.demo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.yanxin.library.library.BlurHandler;
+import com.yanxin.blurbackground.library.BlurHandler;
 
 /**
  * Created by YanXin on 2016/5/20.

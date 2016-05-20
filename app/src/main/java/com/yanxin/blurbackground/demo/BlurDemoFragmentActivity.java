@@ -1,4 +1,4 @@
-package com.yanxin.library.blurbackground;
+package com.yanxin.blurbackground.demo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

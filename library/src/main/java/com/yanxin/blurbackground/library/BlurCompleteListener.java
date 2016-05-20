@@ -1,4 +1,4 @@
-package com.yanxin.library.library;
+package com.yanxin.blurbackground.library;
 
 /**
  * Created by YanXin on 2016/1/14.

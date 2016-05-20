@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.yanxin.library.blurbackground"
+<manifest package="com.yanxin.blurbackground.demo"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
