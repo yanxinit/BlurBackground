@@ -6,7 +6,7 @@
  ![](https://github.com/yanxinit/BlurBackground/blob/master/Demo.gif)
 
 ##下载
-[![](https://jitpack.io/v/yanxinit/BlurBackground.svg)](https://jitpack.io/#yanxinit/BlurBackground)
+[![](https://jitpack.io/#yanxinit/BlurBackground.svg)](https://jitpack.io/#yanxinit/BlurBackground/release-1.0.0)
 
 ##使用方法：
 打开新页面前：
